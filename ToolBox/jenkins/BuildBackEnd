@@ -12,7 +12,7 @@ pipeline  {
         stage("Change Database IP in appsettings.json")
          {
              steps{
-                sh "find BackEnd/Amazon-clone/ -type f -exec sed  -i 's#Server=20.240.61.200#Server=51.21.128.141#g' {} +"
+                sh "find BackEnd/Amazon-clone/ -type f -exec sed  -i 's#Server=20.240.61.200#Server=51.21.110.182#g' {} +"
              }
          }
         stage("Create backend docker image") {
