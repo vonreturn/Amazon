@@ -92,7 +92,7 @@ pipeline  {
             steps {
                 echo " ============== pushing amazon-clone-frontend image =================="
                 sh '''
-                docker push macnaer/amazon-clone-frontend
+                docker push vonreturn/amazon-clone-frontend
                 '''
             }
         }
@@ -100,7 +100,7 @@ pipeline  {
             steps {
                 echo " ============== pushing amazon-clone-backend image =================="
                 sh '''
-                docker push macnaer/amazon-clone-backend
+                docker push vonreturn/amazon-clone-backend
                 '''
             }
         }
